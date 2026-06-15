@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accès privé – Mariage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="login-bg">
+
+<div class="login-box">
+    <h1>Accès privé</h1>
+    <p>Entrez le mot de passe pour voir les photos</p>
+
+    <input type="password" id="pwd" placeholder="Mot de passe">
+    <button onclick="check()">Entrer</button>
+
+    <p id="error" class="error"></p>
+</div>
+
+<script>
+function check() {
+    const pwd = document.getElementById("pwd").value;
+    if (pwd === "mariage13062026") {
+        window.location.href = "galerie.html";
+    } else {
+        document.getElementById("error").innerText = "Mot de passe incorrect";
+    }
+}
+</script>
+
+</body>
+</html>
