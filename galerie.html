@@ -5,20 +5,65 @@
 <title>Photos & Vidéos du Mariage</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<!-- Fenêtre d’agrandissement -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img">
+<body>
+
+<header>
+    <h1>Mariage – Photos & Vidéos Drone</h1>
+
+    <!-- Bouton MEGA -->
+    <a class="download-btn" 
+       href="https://mega.nz/file/PPRVySRJ#whv5gmhZExSNRS2hqkNQauNGRdYAgisDcMlXJaspBcQ" 
+       target="_blank">
+       Télécharger toutes les photos
+    </a>
+</header>
+
+<h2>📸 Photos</h2>
+<div class="gallery">
+
+    <img src="photo (1).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (2).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (3).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (4).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (5).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (6).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (7).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (8).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (9).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (10).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (11).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (12).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (13).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (14).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (15).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (16).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (17).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (18).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (19).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (20).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (21).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (22).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (23).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (24).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (25).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (26).JPG" onclick="openLightbox(this.src)">
+    <img src="photo (27).JPG" onclick="openLightbox(this.src)">
+
 </div>
 
-<script>
-function openLightbox(src) {
-    document.getElementById("lightbox-img").src = src;
-    document.getElementById("lightbox").style.display = "flex";
-}
-function closeLightbox() {
-    document.getElementById("lightbox").style.display = "none";
-}
-</script>
+<h2>🎥 Vidéo du mariage</h2>
+<div class="video">
+    <iframe 
+        width="100%" 
+        height="500" 
+        src="https://www.youtube.com/embed/HFlY3c7y5Qg" 
+        title="Vidéo du mariage"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</div>
+
 <!-- Lightbox PRO -->
 <div id="lightbox" class="lightbox">
     <span class="close" onclick="closeLightbox()">×</span>
@@ -55,61 +100,6 @@ function prevImage() {
     document.getElementById("lightbox-img").src = images[currentIndex];
 }
 </script>
-
-<body>
-
-<header>
-    <h1>Mariage – Photos & Vidéos Drone</h1>
-    <a class="download-btn" href="photos.zip" download>Télécharger toutes les photos</a>
-</header>
-
-<h2>📸 Photos</h2>
-<div class="gallery">
-   <img src="photo (1).JPG">
-<img src="photo (1).JPG" onclick="openLightbox(this.src)">
-<img src="photo (2).JPG" onclick="openLightbox(this.src)">
-<img src="photo (3).JPG" onclick="openLightbox(this.src)">
-<img src="photo (4).JPG" onclick="openLightbox(this.src)">
-<img src="photo (5).JPG" onclick="openLightbox(this.src)">
-<img src="photo (6).JPG" onclick="openLightbox(this.src)">
-<img src="photo (7).JPG" onclick="openLightbox(this.src)">
-<img src="photo (8).JPG" onclick="openLightbox(this.src)">
-<img src="photo (9).JPG" onclick="openLightbox(this.src)">
-<img src="photo (10).JPG" onclick="openLightbox(this.src)">
-<img src="photo (11).JPG" onclick="openLightbox(this.src)">
-<img src="photo (12).JPG" onclick="openLightbox(this.src)">
-<img src="photo (13).JPG" onclick="openLightbox(this.src)">
-<img src="photo (14).JPG" onclick="openLightbox(this.src)">
-<img src="photo (15).JPG" onclick="openLightbox(this.src)">
-<img src="photo (16).JPG" onclick="openLightbox(this.src)">
-<img src="photo (17).JPG" onclick="openLightbox(this.src)">
-<img src="photo (18).JPG" onclick="openLightbox(this.src)">
-<img src="photo (19).JPG" onclick="openLightbox(this.src)">
-<img src="photo (20).JPG" onclick="openLightbox(this.src)">
-<img src="photo (21).JPG" onclick="openLightbox(this.src)">
-<img src="photo (22).JPG" onclick="openLightbox(this.src)">
-<img src="photo (23).JPG" onclick="openLightbox(this.src)">
-<img src="photo (24).JPG" onclick="openLightbox(this.src)">
-<img src="photo (25).JPG" onclick="openLightbox(this.src)">
-<img src="photo (26).JPG" onclick="openLightbox(this.src)">
-<img src="photo (27).JPG" onclick="openLightbox(this.src)">
-
-
-
-</div>
-
-<h2>🎥 Vidéo du mariage</h2>
-<div class="video">
-    <iframe 
-        width="100%" 
-        height="500" 
-        src="https://www.youtube.com/embed/HFlY3c7y5Qg" 
-        title="Vidéo du mariage"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-</div>
 
 </body>
 </html>
