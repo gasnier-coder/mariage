@@ -5,6 +5,21 @@
 <title>Photos & Vidéos du Mariage</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<!-- Fenêtre d’agrandissement -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
 <body>
 
 <header>
@@ -15,32 +30,34 @@
 <h2>📸 Photos</h2>
 <div class="gallery">
    <img src="photo (1).JPG">
-<img src="photo (2).JPG">
-<img src="photo (3).JPG">
-<img src="photo (4).JPG">
-<img src="photo (5).JPG">
-<img src="photo (6).JPG">
-<img src="photo (7).JPG">
-<img src="photo (8).JPG">
-<img src="photo (9).JPG">
-<img src="photo (10).JPG">
-<img src="photo (11).JPG">
-<img src="photo (12).JPG">
-<img src="photo (13).JPG">
-<img src="photo (14).JPG">
-<img src="photo (15).JPG">
-<img src="photo (16).JPG">
-<img src="photo (17).JPG">
-<img src="photo (18).JPG">
-<img src="photo (19).JPG">
-<img src="photo (20).JPG">
-<img src="photo (21).JPG">
-<img src="photo (22).JPG">
-<img src="photo (23).JPG">
-<img src="photo (24).JPG">
-<img src="photo (25).JPG">
-<img src="photo (26).JPG">
-<img src="photo (27).JPG">
+<img src="photo (1).JPG" onclick="openLightbox('photo (1).JPG')">
+<img src="photo (2).JPG" onclick="openLightbox('photo (2).JPG')">
+<img src="photo (3).JPG" onclick="openLightbox('photo (3).JPG')">
+<img src="photo (4).JPG" onclick="openLightbox('photo (4).JPG')">
+<img src="photo (5).JPG" onclick="openLightbox('photo (5).JPG')">
+<img src="photo (6).JPG" onclick="openLightbox('photo (6).JPG')">
+<img src="photo (7).JPG" onclick="openLightbox('photo (7).JPG')">
+<img src="photo (8).JPG" onclick="openLightbox('photo (8).JPG')">
+<img src="photo (9).JPG" onclick="openLightbox('photo (9).JPG')">
+<img src="photo (10).JPG" onclick="openLightbox('photo (10).JPG')">
+<img src="photo (11).JPG" onclick="openLightbox('photo (11).JPG')">
+<img src="photo (12).JPG" onclick="openLightbox('photo (12).JPG')">
+<img src="photo (13).JPG" onclick="openLightbox('photo (13).JPG')">
+<img src="photo (14).JPG" onclick="openLightbox('photo (14).JPG')">
+<img src="photo (15).JPG" onclick="openLightbox('photo (15).JPG')">
+<img src="photo (16).JPG" onclick="openLightbox('photo (16).JPG')">
+<img src="photo (17).JPG" onclick="openLightbox('photo (17).JPG')">
+<img src="photo (18).JPG" onclick="openLightbox('photo (18).JPG')">
+<img src="photo (19).JPG" onclick="openLightbox('photo (19).JPG')">
+<img src="photo (20).JPG" onclick="openLightbox('photo (20).JPG')">
+<img src="photo (21).JPG" onclick="openLightbox('photo (21).JPG')">
+<img src="photo (22).JPG" onclick="openLightbox('photo (22).JPG')">
+<img src="photo (23).JPG" onclick="openLightbox('photo (23).JPG')">
+<img src="photo (24).JPG" onclick="openLightbox('photo (24).JPG')">
+<img src="photo (25).JPG" onclick="openLightbox('photo (25).JPG')">
+<img src="photo (26).JPG" onclick="openLightbox('photo (26).JPG')">
+<img src="photo (27).JPG" onclick="openLightbox('photo (27).JPG')">
+
 
 </div>
 
